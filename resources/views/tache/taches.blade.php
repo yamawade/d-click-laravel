@@ -11,18 +11,17 @@
 
 <div class="container">
     <div class="row">
-        @for($i=1; $i < 8 ; $i++)
+        @foreach($tache as $t)
             <div class="col-12 col-md-3">
             <div class="card">
-                <h5 class="card-header">Nom de la tache {{$i}}</h5>
+                <h5 class="card-header">Nom de la tache {{$t->nom_tache}}</h5>
                 <div class="card-body">
-                    <h5 class="card-title">Priorité: haute</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Detail</a>
+                    <h5 class="card-title">Priorité: {{$t->priorite}}</h5>
+                    <a href="tache/{{$t->id}}/details" class="btn btn-primary">Detail</a>
                     <a href="#" class="btn btn-danger">Supprimer</a>
                 </div>
                 </div>
             </div>
-        @endfor
+        @endforeach
     </div>
 </div>
