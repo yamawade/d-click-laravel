@@ -1,4 +1,4 @@
-@include('default');
+@include('default')
 <div class="container">
     <div class="my-5">
         <div class="row">
@@ -17,6 +17,13 @@
                 <h5 class="card-header">Nom de la tache {{$t->nom_tache}}</h5>
                 <div class="card-body">
                     <h5 class="card-title">Priorité: {{$t->priorite}}</h5>
+                    <h5 class="card-title">Status: 
+                        @if($t->is_termine==1)
+                            Terminer
+                        @else
+                            En Cours
+                        @endif
+                    </h5>
                     <a href="tache/{{$t->id}}/details" class="btn btn-primary">Detail</a>
                     <a href="#" class="btn btn-danger">Supprimer</a>
                 </div>

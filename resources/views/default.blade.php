@@ -17,11 +17,11 @@
                 <div class="collapse navbar-collapse" id="navbarColor02">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                    <a class="nav-link active" href="#">Taches
+                    <a class="nav-link active" href="/tache">Taches
                     </a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Nouvelle</a>
+                    <a class="nav-link" href="/tache/nouveau">Nouvelle</a>
                     </li>
                 </ul>
                 <form class="d-flex">
