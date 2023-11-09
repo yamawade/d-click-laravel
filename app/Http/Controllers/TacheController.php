@@ -40,6 +40,12 @@ class TacheController extends Controller
         return view('tache.show',['tacheTrouver'=>$tache]);
     }
 
+    public function delete(Request $req){
+        $tache=Tache::findOrFail($req->id_tache);
+        $tache->delete();
+        return back();
+    }
+
     public function terminer(Request $req){
         $tache=Tache::findOrFail($req->id_tache);
         $tache->is_termine=1;

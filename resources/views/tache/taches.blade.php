@@ -24,8 +24,8 @@
                             En Cours
                         @endif
                     </h5>
-                    <a href="tache/{{$t->id}}/details" class="btn btn-primary">Detail</a>
-                    <a href="#" class="btn btn-danger">Supprimer</a>
+                    <a href="/tache/{{$t->id}}/details" class="btn btn-primary">Detail</a>
+                    <a href="/tache/{{$t->id}}" class="btn btn-danger">Supprimer</a>
                 </div>
                 </div>
             </div>

@@ -23,4 +23,5 @@ Route::get('/tache',[TacheController::class, 'getListeTache']);
 Route::get('/tache/nouveau',[TacheController::class, 'create']);
 Route::post('/tache/nouveau',[TacheController::class, 'save']);
 Route::get('/tache/{id}/details',[TacheController::class, 'show']);
+Route::get('/tache/{id_tache}',[TacheController::class, 'delete']);
 Route::get('/tache/terminer/{id_tache}',[TacheController::class, 'terminer']);
